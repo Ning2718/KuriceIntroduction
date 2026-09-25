@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nougat CSS template for Neocities</title>
+    <meta name="author" content="[你的名字写在这里！]">
+    <meta name="description" content="[在这里写一下你的网站介绍！]">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+      
+<!--这个容器让栏目在手机和桌面端都能正确显示-->
+<div class="container">
+    
+    <header id="top">
+        
+        <a href="/index.html"><img src="images/your-icon.png" alt="我的图标"></a>
+        <h1>The News With Kurice</h1>
+        <p>Every page is served warm, with an extra dollop of cream.</p>
+        <!--我喜欢在页面上放一个最后更新日期，但这不是必须的……-->
+        <!--这里是白字黑底区块-->
+        <p class="inverted">
+            =Ning/冰奶油 如果要联系我：Ning_391991（vx和xhs都是这个呀）
+        </p>
+        <!--链接是可选的……其实一切都是可选的，毕竟这是你的网站-->
+        
+    </header>
+        
+    <nav id="navigation">
+        <span>跳转到各个板块：</span>
+        <ul>
+            <li><a href="#issue3">About Kurice</a></li>
+            <li><a href="#issue2">美化展示</a></li>
+            <li><a href="#issue1">待填入…</a></li>
+        </ul>
+    </nav>
+      
+    <main>
+        
+        <!--每一期内容（issue）都做成一个独立的 article……你可以从上方导航链接到它们，读者点击后就能滚动到更早的板块（我把内容按时间倒序排列，毕竟这是网页嘛哈哈）-->
+        <article id="issue3">
+        <!--注意 id 里不要带 #，只有导航的 href 部分需要 #，因为那是链接……我第一次做的时候被这个坑过，所以想在这里解释一下。-->
+        <h2>About Kurice</h2>
+        
+        <div class="columns bordered">
+        
+            <section class="left-2col">
+                <h3>欢迎！</h3>
+                
+                <h4>关于我</h4>
+                <p>可以叫我宁宁/冰奶油</p>
+                <p>一个爱做美化的小女孩，还在多方摸索中！最近在接触：字素/封设/排版/PS……</p>
+                <p>ISTJ低精力嘴笨之人 社交能力为零 希望大家都玩得开心</p>
+                
+                <h4>关于群聊</h4>
+                <p>有宝宝反映看不到我在地瓜帖子里加的文件，所以之后的无偿文件大概率都会发在地瓜无偿群内，在主页就可以找到这个群呀，就叫“美化分享群”</p>
+                <p>有一个自己的美化群，里面会发预览/上新和一些群内限定的无偿，想进群直接和我说就ok</p>
+                <p>这些是2026年9月份的群内限定无偿：城市立体图、抽卡、无限流抽卡、翻牌子npc介绍、切换背景图侧边栏、作者的话</p>
+                <p>以上文件我都有备份，如果入群后没有看到文件的话可以私信我单独发呀</p>
+                
+                <h4>关于Nico</h4>
+                <!--小技巧：把 "small-photo" 类的图片放在 clearfix 的 div 里，这样浮动只作用于那个区块……基本上就是防止奇怪的页面布局问题-->
+                <div class="clearfix">
+                    <img src="images/nico.png" class="small-photo" alt="">
+                    <p>Nico是我自搓的美化小助手，一个全能（？）小助手</p>
+                    <p>他可以做：全局美化、小组件、开屏动画、侧边栏等等，目前Mufy美化较为主流的组件他都可以做</p>
+                    <p>卡内有使用教程以及小白美化教学，新手友好，是我手搓的哦</p>
+                    <p>这是我第一次做小助手，所以确实有不太成熟的地方，目前已经有全面翻新的打算了~</p>
+                </div>
+            </section>
+            
+            <section class="right-2col">
+                <h3>我的美化</h3>
+                <h4>一些来源</h4>
+                <p>我的所有美化都来自恶魔/Evan/Nico或其他可商小助手（以上小助手排名不分先后）</p>
+                <p>我的模特图基本上都是固定的（因为我懒得再重新找），他们来自“viola山山、Qiisu、今点几分甜”老师，都是公开图，可以使用，但是必须标注</p>
+                <p>具体需要标源什么我会在相应代码文件内标注的请放心</p>
+                <p class="banner">已获得恶魔小助手商用授权</p>
+                
+                <!--我在宽栏里专门做了个 "pic" 类来浮动图片，因为我想让图片宽度始终是固定大小……-->
+                <div class="pic clearfix">
+                    <h4>一些其他的</h4>
+                    <img src="images/your-icon.png" alt="">
+                    <p>1.我大概1-2周出一套限购，期间也会掉落无偿，不过可能频率会降低一些</p>
+                    <p>2.不接定制：不用问啦都不接的，因为我是一个灵感相当匮乏的人……</p>
+                    <p>3.适用范围：无论是无偿还是限购，我都不希望在雷霆卡/皮下男的卡中看到我的美化，如果看到我会头晕目眩窒息而亡，那样你就摊上大事了……</p>
+                    <p>总之请互相尊重，感谢配合~</p>
+                </div>
+                
+                <p class="banner">经常有宝宝问“老师有没有json格式的呀”，所以在这里统一回复一下：因为部分代码（如侧边栏）无法导出json格式，所以没有json，所有代码是整理成docx格式文件发送的</p>
+                
+                <h4>部分规划</h4>
+                <p>我有开美化会的打算，是的，如果鸟我的人多的话…</p>
+                <p>这个网站我相当喜欢，做的也很开心，如果有需要我会出教程，不过我也是跟着教程学的，只能说是把我自己的一些心得加进去，我是跟着地瓜@Annapatina老师学习的</p>
+                
+                <p class="banner">下面是一些美化展示~</p>
+            </section>  <!-- 修正：原来是 </div>，现改为 </section> -->
+        </div>
+        </article>
+    
+        <!--这表示板块之间的分隔线-->
+        <hr>
+            
+        <!--现在到了干货部分！你可以从下面这些布局中复制粘贴任何你想要的部分，全都帮你配置好了……我没有把所有组合都做出来，但你明白意思就好。-->
+        <article id="issue2">
+        <h2>美化展示</h2>
+                
+                
+        <div class="columns bordered">
+            <section class="left-2col">
+                <h3>干涸</h3>
+                <img src="images/exhibitone.png" class="small-photo" alt="">
+            </section>
+            <section class="right-2col">
+                <h3>山寺桃花</h3>
+                <img src="images/exhibittwo.png" class="small-photo" alt="">
+            </section>
+            <section class="right-2col">
+                <h3>第三套正快马加鞭赶来中……</h3>
+            </section>
+        </div>
+                
+                
+        <article id="issue1" class="fullwidth">
+            <h2>待填入</h2>
+            <!--嘿嘿，这是隐藏的 fullwidth 类预览……-->
+            <div>
+                <p>这里暂时没有内容……希望你喜欢呀</p>
+            </div>
+        </article>
+                
+        <!--这个链接会滚动回页面顶部-->
+        <section class="banner end-nav"><a href="#top">回到顶部</a></section>
+                
+    </main>
+            
+</div>
+    <!--终于到页脚了！删掉你不用的链接，或者在这一块放上你网站上其他页面的链接-->
+    <footer id="footer" class="inverted">
+        <h4>页面署名</h4>
+        <p>该网页使用的模板：https://nomnomnami.com/templates/</p>
+        <p>© 2026 Kurice</p>
+    </footer>    
+    
+  </body>
+  
+</html>
